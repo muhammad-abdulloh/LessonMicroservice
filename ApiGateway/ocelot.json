@@ -1,7 +1,7 @@
 {
   "Routes": [
     {
-      "DownstreamPathTemplate": "/api/Users/{any}",
+      "DownstreamPathTemplate": "/api/Users",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -9,11 +9,11 @@
           "Port": 7065
         }
       ],
-      "UpstreamPathTemplate": "/api-gateway/users/{any}",
+      "UpstreamPathTemplate": "/api-gateway/users",
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Patch" ]
     },
     {
-      "DownstreamPathTemplate": "/api/Users/{any}",
+      "DownstreamPathTemplate": "/api/Users/GetById/{id}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
@@ -21,7 +21,7 @@
           "Port": 7065
         }
       ],
-      "UpstreamPathTemplate": "/api-gateway/users/{any}",
+      "UpstreamPathTemplate": "/api-gateway/users/{id}",
       "UpstreamHttpMethod": [ "Get", "Post", "Put", "Patch" ]
     }
   ]
