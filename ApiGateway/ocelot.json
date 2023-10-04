@@ -1,0 +1,28 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/Users/{any}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7065
+        }
+      ],
+      "UpstreamPathTemplate": "/api-gateway/users/{any}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Patch" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/Users/{any}",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7065
+        }
+      ],
+      "UpstreamPathTemplate": "/api-gateway/users/{any}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Patch" ]
+    }
+  ]
+}
